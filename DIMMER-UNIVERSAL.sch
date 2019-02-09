@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5C054222
+P 3100 1525
+F 0 "R1" H 3170 1571 50  0000 L CNN
+F 1 "R" H 3170 1480 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 3030 1525 50  0001 C CNN
+F 3 "~" H 3100 1525 50  0001 C CNN
+	1    3100 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C05429C
+P 3700 2300
+F 0 "R2" V 3493 2300 50  0000 C CNN
+F 1 "R" V 3584 2300 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 3630 2300 50  0001 C CNN
+F 3 "~" H 3700 2300 50  0001 C CNN
+	1    3700 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5C054358
+P 3100 2000
+F 0 "RV1" H 3030 2046 50  0000 R CNN
+F 1 "R_POT" H 3030 1955 50  0000 R CNN
+F 2 "Potentiometers:Potentiometer_Piher_PC-16_Single_Vertical" H 3100 2000 50  0001 C CNN
+F 3 "~" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C05441D
+P 3100 2600
+F 0 "C1" H 3215 2646 50  0000 L CNN
+F 1 "C" H 3215 2555 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 3138 2450 50  0001 C CNN
+F 3 "~" H 3100 2600 50  0001 C CNN
+	1    3100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C0544A3
+P 4100 2600
+F 0 "C2" H 4215 2646 50  0000 L CNN
+F 1 "C" H 4215 2555 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L7.2mm_W5.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4138 2450 50  0001 C CNN
+F 3 "~" H 4100 2600 50  0001 C CNN
+	1    4100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:DIAC D1
+U 1 1 5C054541
+P 4500 2300
+F 0 "D1" H 4500 2566 50  0000 C CNN
+F 1 "DIAC" H 4500 2475 50  0000 C CNN
+F 2 "Diodes_THT:D_A-405_P5.08mm_Vertical_KathodeUp" H 4500 2300 50  0001 C CNN
+F 3 "~" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Triac_Thyristor:BT136-800 Q1
+U 1 1 5C0545F0
+P 4975 2200
+F 0 "Q1" H 5104 2246 50  0000 L CNN
+F 1 "BT136-800" H 5104 2155 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5175 2125 50  0001 L CIN
+F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 4975 2200 50  0001 L CNN
+	1    4975 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2450 4100 2300
+Wire Wire Line
+	3100 1675 3100 1850
+Wire Wire Line
+	3100 1125 3100 1375
+Wire Wire Line
+	3100 1125 4975 1125
+Wire Wire Line
+	4975 1125 4975 2050
+Wire Wire Line
+	4975 2350 4975 2925
+$Comp
+L Device:R R3
+U 1 1 5C054D3F
+P 5700 1550
+F 0 "R3" H 5770 1596 50  0000 L CNN
+F 1 "R" H 5770 1505 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 5630 1550 50  0001 C CNN
+F 3 "~" H 5700 1550 50  0001 C CNN
+	1    5700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5C054D8C
+P 5700 2500
+F 0 "C3" H 5815 2546 50  0000 L CNN
+F 1 "C" H 5815 2455 50  0000 L CNN
+F 2 "Capacitors_THT:C_Rect_L13.0mm_W3.0mm_P10.00mm_FKS3_FKP3_MKS4" H 5738 2350 50  0001 C CNN
+F 3 "~" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 1125 5700 1125
+Wire Wire Line
+	5700 1125 5700 1400
+Connection ~ 4975 1125
+Wire Wire Line
+	5700 1700 5700 2350
+Wire Wire Line
+	5700 2925 4975 2925
+Connection ~ 4975 2925
+Wire Wire Line
+	5700 2650 5700 2925
+Wire Wire Line
+	3100 2925 4100 2925
+Wire Wire Line
+	3100 2150 3100 2300
+Wire Wire Line
+	3100 2300 3400 2300
+Connection ~ 3100 2300
+Wire Wire Line
+	3100 2300 3100 2450
+Wire Wire Line
+	3850 2300 4100 2300
+Connection ~ 4100 2300
+Wire Wire Line
+	4100 2300 4350 2300
+Wire Wire Line
+	4100 2750 4100 2925
+Connection ~ 4100 2925
+Wire Wire Line
+	4100 2925 4975 2925
+Wire Wire Line
+	3250 2000 3400 2000
+Wire Wire Line
+	3400 2000 3400 2300
+Connection ~ 3400 2300
+Wire Wire Line
+	3400 2300 3550 2300
+Wire Wire Line
+	3100 2750 3100 2925
+Wire Wire Line
+	4650 2300 4825 2300
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5C058CBC
+P 2075 2050
+F 0 "J1" H 1995 1625 50  0000 C CNN
+F 1 "CONEXION" H 1995 1716 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x5.08mm_Vertical" H 2075 2050 50  0001 C CNN
+F 3 "~" H 2075 2050 50  0001 C CNN
+	1    2075 2050
+	-1   0    0    1   
+$EndComp
+Connection ~ 3100 1125
+Wire Wire Line
+	2275 2150 2600 2150
+Wire Wire Line
+	2600 2150 2600 2925
+Wire Wire Line
+	2600 2925 3100 2925
+Connection ~ 3100 2925
+Wire Wire Line
+	2275 1950 2600 1950
+Wire Wire Line
+	2600 1950 2600 2050
+Wire Wire Line
+	2600 2050 2275 2050
+Wire Wire Line
+	2275 1850 2600 1850
+Wire Wire Line
+	2600 1850 2600 1125
+Wire Wire Line
+	2600 1125 3100 1125
+$EndSCHEMATC
